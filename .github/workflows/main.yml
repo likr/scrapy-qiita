@@ -1,6 +1,8 @@
 name: CI
 
-on: push
+on:
+  schedule:
+    - cron:  '0 0 * * 0'
 
 jobs:
   build:
@@ -20,8 +22,9 @@ jobs:
     - name: crawl
       run: |
         pip install -r requirements.txt
-        scrapy crawl items -o qiita`date "+%Y%m%d"`.json -t jsonlines --nolog
+        scrapy crawl items -o items`date "+%Y%m%d"`.json -t jsonlines --nolog
         gsutil cp qiita`date "+%Y%m%d"`.json gs://vdslab/qiita/
-        bq --project=vdslab-207906 --dataset_id=qiita mk items`date "+%Y%m%d"`
+        bq --project=vdslab-207906 --dataset_id=qiita mk --table --force --expiration=2419200  items`date "+%Y%m%d"`
+        bq --project=vdslab-207906 load --source_format=NEWLINE_DELIMITED_JSON qiita.items`date "+%Y%m%d"` gs://vdslab/qiita/items`date "+%Y%m%d"`.json scheme.json
       env:
         QIITA_TOKEN:  ${{ secrets.QIITA_TOKEN }}

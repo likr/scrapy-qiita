@@ -1,0 +1,202 @@
+[
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "website_url",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "organization",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "twitter_screen_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "facebook_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "followers_count",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "profile_image_url",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "github_login_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "items_count",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "permanent_id",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "followees_count",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "linkedin_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "description",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "team_only",
+        "type": "BOOLEAN"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "user",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "url",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REPEATED",
+        "name": "versions",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "tags",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "coediting",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "body",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "likes_count",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "rendered_body",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "comments_count",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updated_at",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "reactions_count",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "created_at",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_views_count",
+    "type": "INTEGER"
+  },
+  {
+    "fields": [
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "name": "private",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "url_name",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "group",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "private",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "id",
+    "type": "STRING"
+  }
+]
