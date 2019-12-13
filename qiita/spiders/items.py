@@ -20,7 +20,7 @@ class ItemsSpider(scrapy.Spider):
     def start_requests(self):
         requests = []
         now = date.today()
-        # now = date(2011, 10, 1)
+        now = date(2011, 10, 1)
         delta = timedelta(days=7)
         start_date = date(2011, 9, 1)
         stop_date = start_date + delta

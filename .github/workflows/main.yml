@@ -16,7 +16,7 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
     - name: crawl
       run: |
-        pip install -r requirements.txt
+        pip3 install -r requirements.txt
         scrapy crawl items -o qiita`date "+%Y%m%d"`.json -t jsonlines --nolog
         gsutil cp qiita`date "+%Y%m%d"`.json gs://vdslab/qiita/
         bq --project=vdslab-207906 --dataset_id=qiita mk items`date "+%Y%m%d"`
