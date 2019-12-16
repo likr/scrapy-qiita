@@ -39,7 +39,7 @@ class ItemsSpider(scrapy.Spider):
 
     def parse(self, response):
         print(response.url)
-        result = json.loads(response.body)
+        result = json.loads(response.body.decode())
         for item in result:
             yield item
 
