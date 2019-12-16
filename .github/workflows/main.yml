@@ -21,8 +21,8 @@ jobs:
     - name: crawl
       run: |
         scrapy crawl items -o items`date "+%Y%m%d"`.json -t jsonlines --nolog
-        gsutil cp qiita`date "+%Y%m%d"`.json gs://vdslab/qiita/
-        bq --project=vdslab-207906 --dataset_id=qiita mk --table --force --expiration=2419200  items`date "+%Y%m%d"`
+        gsutil cp items`date "+%Y%m%d"`.json gs://vdslab/qiita/
+        bq --project=vdslab-207906 --dataset_id=qiita mk --table --force --expiration=2419200 gs://vdslab/qiita/items`date "+%Y%m%d"`.json
         bq --project=vdslab-207906 load --source_format=NEWLINE_DELIMITED_JSON qiita.items`date "+%Y%m%d"` gs://vdslab/qiita/items`date "+%Y%m%d"`.json scheme.json
       env:
         QIITA_TOKEN:  ${{ secrets.QIITA_TOKEN }}
