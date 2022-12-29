@@ -1,202 +1,264 @@
 [
   {
-    "fields": [
-      {
-        "mode": "NULLABLE",
-        "name": "website_url",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "organization",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "twitter_screen_name",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "facebook_id",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "id",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "followers_count",
-        "type": "INTEGER"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "profile_image_url",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "github_login_name",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "items_count",
-        "type": "INTEGER"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "name",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "permanent_id",
-        "type": "INTEGER"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "followees_count",
-        "type": "INTEGER"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "linkedin_id",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "description",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "location",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "team_only",
-        "type": "BOOLEAN"
-      }
-    ],
-    "mode": "NULLABLE",
     "name": "user",
-    "type": "RECORD"
-  },
-  {
     "mode": "NULLABLE",
-    "name": "url",
-    "type": "STRING"
-  },
-  {
+    "type": "RECORD",
     "fields": [
       {
-        "mode": "REPEATED",
-        "name": "versions",
-        "type": "STRING"
+        "name": "website_url",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
       },
       {
+        "name": "organization",
         "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "twitter_screen_name",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "facebook_id",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "id",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "followers_count",
+        "mode": "NULLABLE",
+        "type": "INTEGER",
+        "fields": []
+      },
+      {
+        "name": "profile_image_url",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "github_login_name",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "items_count",
+        "mode": "NULLABLE",
+        "type": "INTEGER",
+        "fields": []
+      },
+      {
         "name": "name",
-        "type": "STRING"
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "permanent_id",
+        "mode": "NULLABLE",
+        "type": "INTEGER",
+        "fields": []
+      },
+      {
+        "name": "followees_count",
+        "mode": "NULLABLE",
+        "type": "INTEGER",
+        "fields": []
+      },
+      {
+        "name": "linkedin_id",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "description",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "location",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "team_only",
+        "mode": "NULLABLE",
+        "type": "BOOLEAN",
+        "fields": []
       }
-    ],
-    "mode": "REPEATED",
+    ]
+  },
+  {
+    "name": "url",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "fields": []
+  },
+  {
     "name": "tags",
-    "type": "RECORD"
+    "mode": "REPEATED",
+    "type": "RECORD",
+    "fields": [
+      {
+        "name": "versions",
+        "mode": "REPEATED",
+        "type": "STRING",
+        "fields": []
+      },
+      {
+        "name": "name",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      }
+    ]
   },
   {
-    "mode": "NULLABLE",
     "name": "coediting",
-    "type": "BOOLEAN"
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "body",
-    "type": "STRING"
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "likes_count",
-    "type": "INTEGER"
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "rendered_body",
-    "type": "STRING"
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "comments_count",
-    "type": "INTEGER"
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "updated_at",
-    "type": "TIMESTAMP"
+    "mode": "NULLABLE",
+    "type": "TIMESTAMP",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "reactions_count",
-    "type": "INTEGER"
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "title",
-    "type": "STRING"
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "created_at",
-    "type": "TIMESTAMP"
-  },
-  {
     "mode": "NULLABLE",
-    "name": "page_views_count",
-    "type": "INTEGER"
+    "type": "TIMESTAMP",
+    "fields": []
   },
   {
+    "name": "page_views_count",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "fields": []
+  },
+  {
+    "name": "group",
+    "mode": "NULLABLE",
+    "type": "RECORD",
     "fields": [
       {
         "name": "created_at",
-        "type": "TIMESTAMP"
+        "mode": "NULLABLE",
+        "type": "TIMESTAMP",
+        "fields": []
       },
       {
         "name": "id",
-        "type": "INTEGER"
+        "mode": "NULLABLE",
+        "type": "INTEGER",
+        "fields": []
       },
       {
         "name": "name",
-        "type": "STRING"
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
       },
       {
         "name": "private",
-        "type": "BOOLEAN"
+        "mode": "NULLABLE",
+        "type": "BOOLEAN",
+        "fields": []
       },
       {
         "name": "updated_at",
-        "type": "TIMESTAMP"
+        "mode": "NULLABLE",
+        "type": "TIMESTAMP",
+        "fields": []
       },
       {
         "name": "url_name",
-        "type": "STRING"
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
       }
-    ],
-    "mode": "NULLABLE",
-    "name": "group",
-    "type": "RECORD"
+    ]
   },
   {
-    "mode": "NULLABLE",
     "name": "private",
-    "type": "BOOLEAN"
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "fields": []
   },
   {
-    "mode": "NULLABLE",
     "name": "id",
-    "type": "STRING"
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "fields": []
+  },
+  {
+    "name": "stocks_count",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "fields": []
+  },
+  {
+    "name": "team_membership",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "fields": [
+      {
+        "name": "name",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "fields": []
+      }
+    ]
   }
 ]
